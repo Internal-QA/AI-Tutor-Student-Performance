@@ -1,0 +1,2 @@
+[1] 2025-07-25 09:44:30.720829 - student2186_1753416857@test.com - Anna Brown - HTTP:200
+[1] Response: {"success":true,"message":"Student profile created successfully","student_id":"6883049b0e5804953bc13a05","email_sent":true,"details":{"program":{"id":"686e41476649bb21dd9c98f1","name":"Doctor of Business Administration","code":"DBA"},"cohort":{"id":"686cdfeafec63ba9681d5af2","label":"July","start_date":null,"end_date":null},"year":{"id":"686ce13bfec63ba9681d5b04","label":"2025","ordinal":2,"description":"2025"}}}
