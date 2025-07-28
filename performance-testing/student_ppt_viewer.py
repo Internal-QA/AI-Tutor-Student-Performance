@@ -17,7 +17,7 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 def setup_logging():
     """Setup logging to both console and file"""
     # Create logs directory if it doesn't exist
-    log_dir = "../results/logs"
+    log_dir = "logs"
     os.makedirs(log_dir, exist_ok=True)
     
     # Create log filename with timestamp
@@ -44,7 +44,7 @@ def log_print(message):
 def load_config():
     """Load configuration from test_config.properties"""
     config = {}
-    config_file = "../config/test_config.properties"
+    config_file = "test_config.properties"
     
     if not os.path.exists(config_file):
         print(f"Config file not found: {config_file}")
@@ -61,7 +61,7 @@ def load_config():
 
 def load_student_credentials():
     """Load student credentials from the saved CSV file"""
-    credentials_file = "../data/student_credentials.csv"
+    credentials_file = "student_credentials.csv"
     
     if not os.path.exists(credentials_file):
         print(f"Credentials file not found: {credentials_file}")

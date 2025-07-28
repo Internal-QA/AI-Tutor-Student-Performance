@@ -7,7 +7,7 @@ from datetime import datetime
 
 def load_config():
     config = {}
-    config_file = "../config/test_config.properties"
+    config_file = "test_config.properties"
     
     if not os.path.exists(config_file):
         print(f"Config file not found: {config_file}")
@@ -58,8 +58,9 @@ def main():
     
     # Files
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    log_file = f"../results/logs/students_{timestamp}.log"
-    credentials_file = "../data/student_credentials.csv"
+    os.makedirs("logs", exist_ok=True)
+    log_file = f"logs/students_{timestamp}.log"
+    credentials_file = "student_credentials.csv"
     
     success = 0
     failed = 0

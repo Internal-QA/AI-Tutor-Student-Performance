@@ -6,7 +6,7 @@ import random
 
 def load_student_credentials():
     """Load all student credentials from the saved file"""
-    credentials_file = "../data/student_credentials.csv"
+    credentials_file = "student_credentials.csv"
     
     if not os.path.exists(credentials_file):
         print(f"Credentials file not found: {credentials_file}")
